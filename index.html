@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Country Location on Map</title>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <button class="btn_reset" type="button">Reset</button>
+
+            <input type="text" class="country-input" placeholder="Enter a Country Name">
+
+            <select class="continent-select">
+                <option value="">Select a continent</option>
+
+                <option class="africa" value="Africa">Africa</option>
+
+                <option class="americas" value="Americas">Americas</option>
+
+                <option class="asia" value="Asia">Asia</option>
+
+                <option class="europe" value="Europe">Europe</option>
+
+                <option class="oceania" value="Oceania">Oceania</option>
+            </select>
+            
+            <div class="country-info">
+                <!-- 
+                <img id="country-flag" src="">
+                <p><strong>Name:</strong> <span id="country-name"></span>Country</p>
+                <p><strong>Currency:</strong> <span id="country-currency"></span>Currency</p>
+                <p><strong>Population:</strong> <span id="country-population"></span>Population</p>
+                <p><strong>Language:</strong> <span id="country-language"></span>Language</p>
+                <p><strong>Region:</strong> <span id="country-region"></span>Region</p> -->
+            </div>
+
+            <ul class="country-list">
+                <!-- <div class="mark-up">
+                    <li>${country.name.common}</li>
+                    <li><img src="${country.flags.png}" alt=""></li>
+                </div> -->
+            </ul>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
